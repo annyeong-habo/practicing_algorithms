@@ -10,3 +10,19 @@
 # 출력
 # 첫째 줄에 Swap 횟수를 출력한다
 
+
+# while number < 1 and number > 500000:
+number = int(input())        # number -> 정수의 개수
+
+arr = list(map(int, input().split()))       # arr -> 입력 받아진 n개의 정수를 배열로 생성
+swap = 0        # swap -> swap 횟수 variable
+
+for i in range(len(arr)):
+    for j in range(len(arr)-i-1):
+        if arr[j] > arr[j+1]:
+            arr[j], arr[j+1] = arr[j+1], arr[j]
+            swap = swap + 1
+
+print(swap)
+
+
