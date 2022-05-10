@@ -12,4 +12,6 @@ for i in range(len(list1)):
             a = a + 1
             list1[j], list1[j+1] = list1[j+1], list1[j]
 
+
+print("SWap")
 print("swap 횟수 : " + str(a))
